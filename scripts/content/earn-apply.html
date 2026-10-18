@@ -1,0 +1,67 @@
+<section class="rs-apply" aria-labelledby="apply-title">
+  <div class="rs-apply-inner">
+    <div class="rs-apply-pitch">
+      <h1 id="apply-title">Clean when you want, earn what you need</h1>
+      <p class="rs-apply-lede">Join RESET and clean homes near you. Choose the visits that suit your week, we supply the kit, and you get paid for every visit.</p>
+      <ul class="rs-apply-points">
+        <li><img src="assets/img/product-calendar.webp" alt="" width="56" height="56"><span><strong>Your schedule</strong>Go online when it suits you and accept the visits you want.</span></li>
+        <li><img src="assets/img/product-sponge.webp" alt="" width="56" height="56"><span><strong>Kit supplied</strong>Everything you need for every visit, provided by RESET.</span></li>
+        <li><img src="assets/img/product-money_bag.webp" alt="" width="56" height="56"><span><strong>Paid for every visit</strong>Tips included, straight to your account.</span></li>
+      </ul>
+    </div>
+
+    <div class="rs-apply-card">
+      <form class="rs-form" id="apply-form" novalidate>
+        <h2>Apply to clean</h2>
+        <p class="rs-form-sub">It takes about two minutes.</p>
+
+        <div class="rs-row">
+          <label class="rs-field"><span>First name</span><input name="first" autocomplete="given-name" required></label>
+          <label class="rs-field"><span>Last name</span><input name="last" autocomplete="family-name" required></label>
+        </div>
+        <label class="rs-field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="rs-field"><span>Mobile number</span>
+          <span class="rs-phone"><span class="rs-prefix">+61</span><input name="mobile" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="412 345 678" required></span>
+        </label>
+        <label class="rs-field"><span>Suburb</span><input name="suburb" autocomplete="address-level2" placeholder="e.g. Surry Hills" required></label>
+        <label class="rs-field"><span>Cleaning experience</span>
+          <select name="experience" required>
+            <option value="">Choose one</option>
+            <option>None yet</option>
+            <option>Less than a year</option>
+            <option>1 to 3 years</option>
+            <option>More than 3 years</option>
+          </select>
+        </label>
+
+        <fieldset class="rs-days">
+          <legend>When can you work?</legend>
+          <div class="rs-chips">
+            <label><input type="checkbox" name="days" value="Mon"><span>Mon</span></label>
+            <label><input type="checkbox" name="days" value="Tue"><span>Tue</span></label>
+            <label><input type="checkbox" name="days" value="Wed"><span>Wed</span></label>
+            <label><input type="checkbox" name="days" value="Thu"><span>Thu</span></label>
+            <label><input type="checkbox" name="days" value="Fri"><span>Fri</span></label>
+            <label><input type="checkbox" name="days" value="Sat"><span>Sat</span></label>
+            <label><input type="checkbox" name="days" value="Sun"><span>Sun</span></label>
+          </div>
+        </fieldset>
+
+        <label class="rs-check"><input type="checkbox" name="rights" required><span>I have the right to work in Australia</span></label>
+        <label class="rs-check"><input type="checkbox" name="checks" required><span>I agree to an ID and background check before my first visit</span></label>
+
+        <p class="rs-form-error" role="alert" hidden></p>
+        <button class="rs-submit" type="submit">Apply to clean</button>
+        <p class="rs-fine">By applying, you agree to RESET's Terms and Privacy Policy.</p>
+      </form>
+
+      <div class="rs-done" id="apply-done" hidden tabindex="-1">
+        <img class="rs-done-art" src="assets/img/arch/welcome-room.svg" alt="" width="270" height="300">
+        <p class="rs-booked-label"><svg class="rs-booked-check" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" fill="#fff"/><path d="M6.4 11.3l3 3 6.2-6.4" fill="none" stroke="#3B6CF0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Application sent</span></p>
+        <h2>Thanks, <span data-first>there</span>.</h2>
+        <p>Your application is in. We'll email you about next steps, including your ID and background check.</p>
+        <p class="rs-done-note">“All done. You can breathe.”</p>
+      </div>
+    </div>
+  </div>
+</section>

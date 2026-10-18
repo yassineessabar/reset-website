@@ -1,0 +1,63 @@
+<section class="rs-apply" aria-labelledby="gift-title">
+  <div class="rs-apply-inner">
+    <div class="rs-apply-pitch">
+      <h1 id="gift-title">Give someone their weekend back</h1>
+      <p class="rs-apply-lede">A RESET gift card goes towards any reset in Sydney. Sent by email, ready whenever they are.</p>
+      <div class="rs-giftcard" aria-live="polite">
+        <div class="rs-giftcard-top"><img src="assets/img/brand/reset-logo-white.svg" alt="RESET" width="96"><span>Gift card</span></div>
+        <div class="rs-giftcard-amount" data-amount>$100</div>
+        <div class="rs-giftcard-to" data-to>For someone who deserves a break</div>
+      </div>
+    </div>
+
+    <div class="rs-apply-card">
+      <form class="rs-form" id="gift-form" data-rs-form="gift-done" novalidate>
+        <h2>Send a gift card</h2>
+        <p class="rs-form-sub">Choose an amount, add a message, and we'll email it.</p>
+        <fieldset class="rs-days">
+          <legend>Amount</legend>
+          <div class="rs-chips">
+            <label><input type="radio" name="amount" value="50" required data-msg="Choose an amount."><span>$50</span></label>
+            <label><input type="radio" name="amount" value="100" checked><span>$100</span></label>
+            <label><input type="radio" name="amount" value="150"><span>$150</span></label>
+            <label><input type="radio" name="amount" value="250"><span>$250</span></label>
+            <label><input type="radio" name="amount" value="custom"><span>Other</span></label>
+          </div>
+        </fieldset>
+        <label class="rs-field" hidden><span>Other amount (A$25 to A$1,000)</span><input name="custom" type="number" min="25" max="1000" step="1" inputmode="numeric" data-msg="Enter an amount between $25 and $1,000."></label>
+        <input type="hidden" name="total">
+        <div class="rs-row">
+          <label class="rs-field"><span>Their name</span><input name="to_name" required data-msg="Enter the recipient's name."></label>
+          <label class="rs-field"><span>Their email</span><input name="to_email" type="email" required data-msg="Enter the recipient's email, like name@example.com."></label>
+        </div>
+        <label class="rs-field"><span>Your name</span><input name="from_name" autocomplete="name" required data-msg="Enter your name."></label>
+        <label class="rs-field"><span>Message <em class="rs-optional">optional</em></span><textarea name="message" rows="3" maxlength="200" placeholder="Enjoy coming home to done."></textarea></label>
+        <label class="rs-field"><span>When should it arrive?</span>
+          <select name="when"><option>Send now</option><option>Tomorrow</option><option>On a date I choose</option></select>
+        </label>
+        <p class="rs-form-error" role="alert" hidden></p>
+        <button class="rs-submit" type="submit">Continue to payment</button>
+        <p class="rs-fine">Gift cards are valid for at least three years. See our Terms.</p>
+      </form>
+
+      <div class="rs-done" id="gift-done" hidden tabindex="-1">
+        <img class="rs-done-art" src="assets/img/arch/welcome-room.svg" alt="" width="270" height="300">
+        <p class="rs-booked-label"><svg class="rs-booked-check" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" fill="#fff"/><path d="M6.4 11.3l3 3 6.2-6.4" fill="none" stroke="#3B6CF0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Gift card ready</span></p>
+        <h2>A weekend back for <span data-fill="to_name">them</span>.</h2>
+        <p>Once payment is confirmed, we'll email <span data-fill="to_name">them</span> their RESET gift card with your message.</p>
+        <p class="rs-done-note">“All done. You can breathe.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rs-section" aria-labelledby="gift-how">
+  <div class="rs-wrap">
+    <h2 id="gift-how">How it works</h2>
+    <ul class="rs-tiles">
+      <li><img src="assets/img/product-money_bag.webp" alt="" width="96" height="96"><h3>Choose an amount</h3><p>From $50, or any amount from $25 to $1,000.</p></li>
+      <li><img src="assets/img/icons/clipboard.png" alt="" width="96" height="96"><h3>Add a message</h3><p>We email the gift card now or on the day you choose.</p></li>
+      <li><img src="assets/img/product-calendar.webp" alt="" width="96" height="96"><h3>They book a reset</h3><p>The balance goes towards any visit until it is used.</p></li>
+    </ul>
+  </div>
+</section>

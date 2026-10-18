@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="262" viewBox="0 0 270 300" aria-hidden="true">
+    <defs><clipPath id="archDoor"><path d="M20 300V125a115 115 0 01230 0v175z"></path></clipPath></defs>
+    <g clip-path="url(#archDoor)"><rect width="270" height="300" role="img" fill="#EEF2FB"></rect><rect y="232" width="270" height="70" fill="#E3B888"></rect><path d="M0 252h270M60 232l-12 70M135 232v70M210 232l12 70" stroke="#CF9E68" stroke-width="2.5"></path>
+  <rect x="88" y="62" width="104" height="172" rx="6" fill="#fff"></rect><rect x="96" y="70" width="88" height="164" rx="4" fill="#F2B544"></rect>
+  <rect x="106" y="82" width="68" height="62" rx="4" fill="#E39E2B"></rect><rect x="106" y="154" width="68" height="66" rx="4" fill="#E39E2B"></rect>
+  <circle cx="170" cy="152" r="5" fill="#7A4E0F"></circle><rect x="100" y="234" width="80" height="9" rx="4.5" fill="#9B6A3C"></rect>
+  <rect x="26" y="80" width="48" height="52" rx="6" fill="#fff"></rect><path d="M26 86a6 6 0 016-6h36a6 6 0 016 6v8H26z" fill="#FF5A4F"></path>
+  <text x="50" y="122" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="800" font-size="24" fill="#111">15</text>
+  <circle cx="72" cy="80" r="11" fill="#06C167"></circle><path d="M66.5 80.5l3.6 3.6 6.8-7" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M48 152v14" stroke="#8C99AA" stroke-width="3" stroke-linecap="round"></path><circle cx="48" cy="174" r="7" fill="none" stroke="#FFB800" stroke-width="4"></circle><rect x="46" y="179" width="4" height="16" rx="2" fill="#FFB800"></rect>
+  <path d="M210 232l5-30h26l5 30z" fill="#fff"></path><path d="M228 202c0-22 10-34 22-36 0 18-9 32-22 36z" fill="#2BB673"></path><path d="M228 202c-2-18-12-28-24-28 1 15 10 26 24 28z" fill="#5CD18E"></path></g>
+    <path d="M20 300V125a115 115 0 01230 0v175" fill="none" stroke="#fff" stroke-width="6" opacity=".9"></path></svg>

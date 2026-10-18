@@ -1,0 +1,21 @@
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node (if a tool is added later)
+node_modules/
+
+# Local secrets and scratch
+.env
+.env.*
+*.log
+tmp/

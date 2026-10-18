@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="278" viewBox="0 0 270 300" aria-hidden="true">
+    <defs><clipPath id="archBed"><path d="M20 300V125a115 115 0 01230 0v175z"></path></clipPath></defs>
+    <g clip-path="url(#archBed)"><rect width="270" height="300" role="img" fill="#EEF2FB"></rect><rect y="232" width="270" height="70" fill="#E3B888"></rect><path d="M0 252h270M60 232l-12 70M135 232v70M210 232l12 70" stroke="#CF9E68" stroke-width="2.5"></path>
+  <rect x="160" y="58" width="74" height="86" rx="6" fill="#FFD9B0"></rect><circle cx="198" cy="112" r="14" fill="#FFB25C"></circle><path d="M197 58v86M160 100h74" stroke="#fff" stroke-width="5"></path>
+  <rect x="24" y="128" width="150" height="70" rx="16" fill="#8DB2FF"></rect>
+  <rect x="18" y="182" width="164" height="22" rx="8" fill="#fff"></rect><rect x="18" y="194" width="164" height="36" rx="10" fill="#C9D9FF"></rect><path d="M18 206h164" stroke="#B3C8FA" stroke-width="2"></path>
+  <rect x="34" y="160" width="56" height="28" rx="11" fill="#fff"></rect><rect x="98" y="160" width="56" height="28" rx="11" fill="#fff"></rect>
+  <rect x="126" y="196" width="44" height="9" rx="3.5" fill="#8C6CF7"></rect><rect x="129" y="188" width="38" height="9" rx="3.5" fill="#B9A6FF"></rect>
+  <path d="M30 230v8M170 230v8" stroke="#6E4A2B" stroke-width="5" stroke-linecap="round"></path>
+  <rect x="196" y="186" width="50" height="46" rx="5" fill="#fff"></rect><rect x="200" y="204" width="42" height="3" fill="#EEE"></rect><path d="M209 152h24l-5 16h-14z" fill="#FFC44D"></path><path d="M221 168v18" stroke="#2B2B2B" stroke-width="3"></path></g>
+    <path d="M20 300V125a115 115 0 01230 0v175" fill="none" stroke="#fff" stroke-width="6" opacity=".9"></path></svg>

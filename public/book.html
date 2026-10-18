@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Home Clean in Sydney | RESET</title>
+<meta name="description" content="Book a home clean in Sydney in minutes. Enter your address, pick a time, see your price and come home to done.">
+<meta property="og:title" content="Book a Home Clean in Sydney | RESET">
+<meta property="og:description" content="Book a home clean in Sydney in minutes. Enter your address, pick a time, see your price and come home to done.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/app-icon-reset.png">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/book.js" defer></script>
+</head>
+<body class="go-body">
+<header class="go-top">
+  <div class="go-top-left">
+    <a class="go-logo" href="index.html" aria-label="RESET home"><img src="assets/img/brand/reset-logo-black.svg" alt="RESET"></a>
+    <nav class="go-tabs" aria-label="Booking">
+      <a class="go-tab" href="book.html" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z" fill="currentColor"/></svg><span>Book</span></a>
+      <a class="go-tab" href="book.html#recurring">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2V3h-2v2H9V3zm-2 7h14v9H5z" fill="currentColor"/></svg><span>Recurring</span></a>
+    </nav>
+  </div>
+  <div class="go-top-right">
+    <a class="go-login" href="#"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" fill="currentColor"/></svg><span>Log in</span></a>
+    <a class="go-signup" href="#">Sign up</a>
+  </div>
+</header>
+
+<main class="go-main">
+  <section class="go-panel" aria-live="polite">
+
+    <!-- step 1: where and when -->
+    <form id="go-form" novalidate>
+      <h1>Book a reset</h1>
+      <label class="go-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+        <input name="address" placeholder="Your address" autocomplete="street-address" aria-label="Your address" required>
+        <span class="go-link-line" aria-hidden="true"></span>
+      </label>
+      <label class="go-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1" fill="currentColor"/><rect x="9" y="9" width="6" height="6" fill="#F3F3F3"/></svg>
+        <select name="size" aria-label="Home size" required>
+          <option value="">Home size</option>
+          <option>Studio</option>
+          <option>1 bedroom</option>
+          <option>2 bedrooms</option>
+          <option>3 bedrooms</option>
+          <option>4+ bedrooms</option>
+        </select>
+        <svg class="go-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </label>
+      <label class="go-input">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <select name="when" aria-label="When">
+          <option>This week</option>
+          <option>Next week</option>
+          <option>Pick a date</option>
+        </select>
+        <svg class="go-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </label>
+      <div class="go-pills" role="group" aria-label="How often">
+        <button type="button" class="go-pill" aria-pressed="true" data-rhythm="Once">Once</button>
+        <button type="button" class="go-pill" aria-pressed="false" data-rhythm="Every week">Every week</button>
+        <button type="button" class="go-pill" aria-pressed="false" data-rhythm="Every two weeks">Every two weeks</button>
+      </div>
+      <p class="go-error" role="alert" hidden></p>
+      <button class="go-btn" type="submit">See prices</button>
+    </form>
+
+    <!-- step 2: choose a reset -->
+    <div id="go-options" hidden>
+      <button class="go-back" type="button" data-back><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Back</button>
+      <h1>Choose your reset</h1>
+      <p class="go-summary" data-summary></p>
+      <div class="go-opts" role="radiogroup" aria-label="Type of clean">
+        <button type="button" class="go-opt" role="radio" aria-checked="true" data-name="Reset"><img src="assets/img/product-sponge.webp" alt=""><span><strong>Reset</strong><span>A full clean, top to bottom</span></span><b class="go-price">$&nbsp;—</b></button>
+        <button type="button" class="go-opt" role="radio" aria-checked="false" data-name="Deep reset"><img src="assets/img/product-couch.webp" alt=""><span><strong>Deep reset</strong><span>Every corner, cupboard and surface</span></span><b class="go-price">$&nbsp;—</b></button>
+        <button type="button" class="go-opt" role="radio" aria-checked="false" data-name="Move in / out"><img src="assets/img/product-package.webp" alt=""><span><strong>Move in / out</strong><span>Ready to hand back the keys</span></span><b class="go-price">$&nbsp;—</b></button>
+        <button type="button" class="go-opt" role="radio" aria-checked="false" data-name="Holiday turnover"><img src="assets/img/product-bed.webp" alt=""><span><strong>Holiday turnover</strong><span>Fresh linen between guests</span></span><b class="go-price">$&nbsp;—</b></button>
+      </div>
+      <p class="go-note">Your exact price appears before you confirm.</p>
+      <button class="go-btn" type="button" data-confirm>Book Reset</button>
+    </div>
+
+    <!-- step 3: booked -->
+    <div id="go-done" class="go-done" hidden tabindex="-1">
+      <img class="go-done-art" src="assets/img/arch/youre-set-door.svg" alt="" width="270" height="300">
+      <p class="rs-booked-label"><svg class="rs-booked-check" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" fill="#fff"/><path d="M6.4 11.3l3 3 6.2-6.4" fill="none" stroke="#3B6CF0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Booked</span></p>
+      <h1>You're set.</h1>
+      <p data-done-text>We'll confirm your RESET member and time in the RESET app.</p>
+      <p class="go-quote">Nothing to prepare. One message when we arrive, one when we leave.</p>
+      <button class="go-btn" type="button" data-again>Book another reset</button>
+    </div>
+    <p class="go-legal"><a href="terms.html">Terms</a><a href="refunds.html">Cancellations</a><a href="privacy.html">Privacy</a></p>
+  </section>
+
+  <div class="go-map">
+    <iframe title="Map of inner Sydney" loading="lazy" referrerpolicy="no-referrer"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=151.1700%2C-33.9000%2C151.2500%2C-33.8500&amp;layer=mapnik"></iframe>
+  </div>
+</main>
+</body>
+</html>

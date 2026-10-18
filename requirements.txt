@@ -1,0 +1,5 @@
+# Image and page build scripts (scripts/). The site itself has no dependencies.
+Pillow>=10
+numpy>=1.24
+qrcode>=7.4
+# Also used from the command line: cwebp (libwebp) and rsvg-convert (librsvg), e.g. `brew install webp librsvg`
