@@ -43,11 +43,37 @@ PAGES = {
       'We use cookies to keep you signed in, remember your preferences and understand how our website is used. You can control cookies in your browser settings.',
     ]),
     ('Access, correction and complaints', [
-      f'You can ask to see or correct the personal information we hold about you by emailing {PRIVACY_CONTACT}. If you have a privacy complaint, contact us first and we will respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner at oaic.gov.au.',
+      f'You can ask to see or correct the personal information we hold about you by emailing {PRIVACY_CONTACT}. You can delete your account at any time in the app (Profile, Personal info, Delete account) or by email: see Delete your account at resetcleaning.app/delete-account.html. If you have a privacy complaint, contact us first and we will respond within 30 days. If you are not satisfied, you can contact the Office of the Australian Information Commissioner at oaic.gov.au.',
     ]),
     ('Contact us', [f'{ENTITY}, [street address, Sydney NSW]. Email {PRIVACY_CONTACT}.']),
   ]},
 
+'delete-account': {
+  'title': 'Delete your account',
+  'summary': 'How to delete your RESET account and what happens to your information.',
+  'meta': 'How to delete your RESET account, in the app or by email, and what information is deleted or kept.',
+  'intro': 'You can delete your RESET account at any time. It takes a minute in the app, or you can ask us by email.',
+  'sections': [
+    ('In the app', [
+      ('ul', ['Open RESET and go to Profile.',
+              'Tap Personal info, then Delete account.',
+              'Confirm. Your account is deleted straight away and you are signed out.']),
+    ]),
+    ('By email', [
+      f'Email {PRIVACY_CONTACT} from the address you use with RESET and ask us to delete your account. We confirm it is you, delete the account within 7 days and reply when it is done.',
+    ]),
+    ('What is deleted', [
+      ('ul', ['Your profile: name, email and mobile number.',
+              'Your home details, address, access instructions and door codes.',
+              'Your plan, visits, notes, messages and photos.',
+              'Your payment history in RESET, and your saved cards with our payment provider, Stripe.']),
+      'Any upcoming visits are cancelled.',
+    ]),
+    ('What is kept', [
+      'Stripe keeps records of past payments for as long as the law requires (for example, tax and anti-fraud rules). If you told us why you were leaving, that answer is kept without your name or any way to link it to you.',
+    ]),
+  ],
+},
 'terms': {
   'title': 'Terms of Service',
   'summary': 'The terms for booking and using RESET.',
