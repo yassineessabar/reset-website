@@ -2,8 +2,8 @@
 reviewed by a lawyer before launch. Rendered by scripts/build_pages.py into privacy.html, terms.html, accessibility.html."""
 UPDATED = '18 October 2026'
 ENTITY = '[RESET Pty Ltd, ABN 00 000 000 000]'
-CONTACT = '[hello@reset.com.au]'
-PRIVACY_CONTACT = '[privacy@reset.com.au]'
+CONTACT = 'hello@resetcleaning.app'
+PRIVACY_CONTACT = 'privacy@resetcleaning.app'
 
 PAGES = {
 'privacy': {
@@ -193,7 +193,7 @@ PAGES = {
     ('Safety', ['Never put yourself at risk. If a home is unsafe, leave and contact us. Report any injury, damage or incident in the app straight away. [Confirm insurance cover before launch.]']),
     ('Conduct and privacy', ['Respect customers\' privacy: do not share photos, information or details about any home. Customer information is used only to complete the visit.']),
     ('Ending the arrangement', ['You can stop cleaning with RESET at any time. We may stop offering you visits for serious or repeated breaches of these terms, after giving you a chance to respond where appropriate.']),
-    ('Contact us', ['Email [team@reset.com.au] or use Help in the RESET Team app.']),
+    ('Contact us', ['Email team@resetcleaning.app or use Help in the RESET Team app.']),
   ]},
 
 'complaints': {

@@ -17,9 +17,8 @@ What it does
 import json, os, re
 from PIL import Image, ImageDraw, ImageFont
 
-# The live address, e.g. "https://www.reset.com.au". Leave empty until the domain is known:
-# canonical, og:url, absolute image URLs and sitemap.xml are only written when it is set.
-SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
+# The live address. Canonical, og:url, absolute image URLs and sitemap.xml are written from it.
+SITE_URL = os.environ.get("SITE_URL", "https://www.resetcleaning.app").rstrip("/")
 
 from paths import PUBLIC as ROOT, RENDERS as OUT, IMG, FONTS
 PAGE = os.path.join(ROOT, "index.html")
@@ -238,7 +237,9 @@ def write_robots_and_sitemap():
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             f"  <url><loc>{SITE_URL}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>\n"
-            "</urlset>\n")
+            + "".join(f"  <url><loc>{SITE_URL}/{f}</loc></url>\n" for f in sorted(os.listdir(ROOT))
+                      if f.endswith(".html") and f != "index.html")
+            + "</urlset>\n")
     open(os.path.join(ROOT, "robots.txt"), "w").write(robots)
 
 

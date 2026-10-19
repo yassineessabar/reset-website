@@ -53,7 +53,7 @@ make check     # every referenced file exists, no unused assets
 
 `index.html` is the source of truth for shared blocks (nav, footer, FAQ). `scripts/build_pages.py` composes the subpages from it and from `scripts/content/`, so edit the homepage or the content files and then run `make pages`. Every page script is idempotent, so running it twice gives the same output.
 
-`scripts/seo.py` writes the meta tags, Open Graph, JSON-LD and WebP images. Set `SITE_URL=https://...` once the domain is live to add canonical URLs and `sitemap.xml`.
+`scripts/seo.py` writes the meta tags, Open Graph, JSON-LD and WebP images. Canonical URLs and `sitemap.xml` use https://www.resetcleaning.app (override with `SITE_URL=...`).
 
 `scripts/build_assets.py` regenerates the original composite photos. Run it only on purpose: it rewrites renders that the illustration and bright-photo scripts have since replaced.
 
