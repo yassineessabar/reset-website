@@ -229,6 +229,26 @@ def update_page(webp_sources):
     return s
 
 
+def point_pages_at_themselves():
+    """The other pages copy the homepage's head (build_pages.py runs first), so each one gets its own
+    canonical and og:url here, and the homepage's absolute image URLs, rather than pointing at the homepage."""
+    if not SITE_URL:
+        return
+    home = open(PAGE).read()
+    image = re.search(r'<meta property="og:image" content="[^"]*">', home)
+    for f in sorted(os.listdir(ROOT)):
+        path = os.path.join(ROOT, f)
+        if not f.endswith(".html") or path == PAGE:
+            continue
+        s = open(path).read()
+        url = f"{SITE_URL}/{f}"
+        s = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">', s)
+        s = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{url}">', s)
+        if image:
+            s = re.sub(r'<meta property="og:image" content="[^"]*">', image.group(0), s)
+        open(path, "w").write(s)
+
+
 def write_robots_and_sitemap():
     robots = "User-agent: *\nAllow: /\n"
     if SITE_URL:
@@ -247,6 +267,7 @@ if __name__ == "__main__":
     make_og_image()
     sources = make_webp()
     page = update_page(sources)
+    point_pages_at_themselves()
     write_robots_and_sitemap()
     print(f"seo: {len(sources)} images as WebP, h1={page.count('<h1')}, "
           f"h2={page.count('<h2')}, SITE_URL={'set' if SITE_URL else 'not set (canonical/sitemap skipped)'}")

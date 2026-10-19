@@ -20,6 +20,7 @@ for dp, _, fs in os.walk(PUBLIC):
         base = PUBLIC if f.endswith(('.js', '.html')) else dp   # JS paths resolve against the page
         for r in found:
             r = r.split('?')[0].split('#')[0]
+            r = re.sub(r'^https://www\.resetcleaning\.app/', '', r)   # our own absolute URLs (og:image) are local files too
             if not r or re.match(r'^(https?:|data:|mailto:|tel:|//|javascript:)', r) or not re.search(r'\.\w{2,5}$', r):
                 continue
             refs.setdefault(os.path.normpath(os.path.join(base, r)), set()).add(os.path.relpath(fp, PUBLIC))
